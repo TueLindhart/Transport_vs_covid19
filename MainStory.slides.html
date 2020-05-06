@@ -13201,7 +13201,7 @@ a.anchor-link {
 <section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="kn">import</span> <span class="n">show</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">output_file</span>
@@ -13223,6 +13223,26 @@ a.anchor-link {
 <span class="kn">from</span> <span class="nn">branca.colormap</span> <span class="kn">import</span> <span class="n">linear</span>
 <span class="kn">from</span> <span class="nn">folium.features</span> <span class="kn">import</span> <span class="n">DivIcon</span>
 <span class="kn">import</span> <span class="nn">folium</span>
+
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;</span>
+<span class="s1">$(&#39;div.input&#39;).hide(&#39;500&#39;)</span>
+<span class="s1">  function code_toggle() {</span>
+<span class="s1">    if (code_shown){</span>
+<span class="s1">      $(&#39;div.input&#39;).hide(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Display code&#39;)</span>
+<span class="s1">    } else {</span>
+<span class="s1">      $(&#39;div.input&#39;).show(&#39;500&#39;);</span>
+<span class="s1">      $(&#39;#toggleButton&#39;).val(&#39;Hide Code&#39;)</span>
+<span class="s1">    }</span>
+<span class="s1">    code_shown = !code_shown</span>
+<span class="s1">  }</span>
+
+<span class="s1">  $( document ).ready(function(){</span>
+<span class="s1">    code_shown=false;</span>
+<span class="s1">    $(&#39;div.input&#39;).hide()</span>
+<span class="s1">  });</span>
+<span class="s1">&lt;/script&gt;</span>
+<span class="s1">&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; id=&quot;toggleButton&quot; value=&quot;Display code&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
 
 
     
@@ -13246,7 +13266,7 @@ a.anchor-link {
 
     <div class="bk-root">
         <a href="https://bokeh.org" target="_blank" class="bk-logo bk-logo-small bk-logo-notebook"></a>
-        <span id="1001">Loading BokehJS ...</span>
+        <span id="21288">Loading BokehJS ...</span>
     </div>
 </div>
 
@@ -13260,10 +13280,10 @@ a.anchor-link {
 
 
 
-<div id="654ee4e8-8d0e-4ea9-801d-3628b22c55ab"></div>
+<div id="8351d663-592c-4242-a5ee-b642782501f7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#654ee4e8-8d0e-4ea9-801d-3628b22c55ab');
+var element = $('#8351d663-592c-4242-a5ee-b642782501f7');
 
 (function(root) {
   function now() {
@@ -13424,7 +13444,7 @@ var element = $('#654ee4e8-8d0e-4ea9-801d-3628b22c55ab');
      "</div>"}};
 
   function display_loaded() {
-    var el = document.getElementById("1001");
+    var el = document.getElementById("21288");
     if (el != null) {
       el.textContent = "BokehJS is loading...";
     }
@@ -13506,9 +13526,9 @@ var element = $('#654ee4e8-8d0e-4ea9-801d-3628b22c55ab');
       console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
       document.head.appendChild(element);
     }
-  };var element = document.getElementById("1001");
+  };var element = document.getElementById("21288");
   if (element == null) {
-    console.error("Bokeh: ERROR: autoload.js configured with elementid '1001' but no matching script tag was found. ")
+    console.error("Bokeh: ERROR: autoload.js configured with elementid '21288' but no matching script tag was found. ")
     return false;
   }
 
@@ -13548,7 +13568,7 @@ var element = $('#654ee4e8-8d0e-4ea9-801d-3628b22c55ab');
       console.log("Bokeh: BokehJS failed to load within specified timeout.");
       root._bokeh_failed_load = true;
     } else if (force !== true) {
-      var cell = $(document.getElementById("1001")).parents('.cell').data().cell;
+      var cell = $(document.getElementById("21288")).parents('.cell').data().cell;
       cell.output_area.append_execute_result(NB_LOAD_WARNING)
     }
 
@@ -13565,6 +13585,36 @@ var element = $('#654ee4e8-8d0e-4ea9-801d-3628b22c55ab');
   }
 }(window));
 </script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[42]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+$('div.input').hide('500')
+  function code_toggle() {
+    if (code_shown){
+      $('div.input').hide('500');
+      $('#toggleButton').val('Display code')
+    } else {
+      $('div.input').show('500');
+      $('#toggleButton').val('Hide Code')
+    }
+    code_shown = !code_shown
+  }
+
+  $( document ).ready(function(){
+    code_shown=false;
+    $('div.input').hide()
+  });
+</script>
+<form action="javascript:code_toggle()"><input type="submit" id="toggleButton" value="Display code"></form>
 </div>
 
 </div>
@@ -13848,10 +13898,10 @@ div.prompt {display:none}
 
 
 
-<div id="92f6cf4e-0cf1-4bc8-bdd9-0e1384e636a9"></div>
+<div id="cf732d9c-34d1-40af-8041-78d5beaa263f"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#92f6cf4e-0cf1-4bc8-bdd9-0e1384e636a9');
+var element = $('#cf732d9c-34d1-40af-8041-78d5beaa263f');
 (function(root) {
   function embed_document(root) {
     
