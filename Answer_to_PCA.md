@@ -1,1 +1,1 @@
-The correct answer it that there that a municipality with that combination; many people present both day and night, low unemployement, low level of education, few from non-vestern countries, low income and high median age are likely to have big changes in speed. :-) 
+A high speed change is most probable. *Day/Night Ratio* and *median age* points in the **same** direction as *speed change* and therefore needs to be **above average** while the rest point in the **opposite** direction and therefore needs to be **below** average. So **same == above** and **opposite = below**. 
