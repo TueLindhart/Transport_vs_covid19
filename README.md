@@ -1,5 +1,7 @@
 # Transport vs. Covid-19
 
-Press [here](https://tuelindhart.github.io/Transport_vs_covid19/MainStory.slides.html) to see the data visualization slides of the changes in public transport during the covid-19 lockdown in the Urban Areaa of Copenhagen. 
+Press [here](https://tuelindhart.github.io/Transport_vs_covid19/MainStory.html) to see the visual narrative about the development of public transport in Copenhagen during the covid-19 lockdown in March. 
 
-ækae k
+The explainer notebook is named Project assignment B and can be found in the folder. 
+
+All data used can be found in the folder data. Some of the data is post-processed data that becomes used in the visual narrative for making the need of code shorter. 
